@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #1C2321;
+  --secondary-color: #5E6572;
+  --green: #99C691;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Popins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-color);
+}
+
+.App {
+  width: 60vw;
+  margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.landing {
+  margin-top: 20vh;
+  width: 100%;
+}
+
+.landing2 {
+  margin-top: 20vh;
+  width: 100%;
+}
+
+.landing2 h2 {
+  font-size: 50px;
+  text-align: right;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.landing2 .typewriter {
+  font-size: 50px;
+  text-align: right;
+  font-weight: 700;
+  color: var(--info-color);
+}
+
+.landing h2 {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.landing h3 {
+  font-size: 100px;
+  color: var(--green);
+  font-weight: 900;
+}
+
+.landing2 .buttons-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.landing2 .buttons-container a {
+  transition: 0.4s;
+}
+
+.landing2 .buttons-container img {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.landing2 .buttons-container img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0px 0px 5px #222);
+  cursor: pointer;
+}
+.landing2 .buttons-container a:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.landing2 button {
+  transition: 0.4s;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: var(--info-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.landing2 button:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+}
+
+.skills {
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 667px) and (max-width: 1600px) {
+  .App {
+    width: 80vw;
+  }
+
+  .landing h2 {
+    font-size: 50px;
+  }
+
+  .landing h3 {
+    font-size: 50px;
+  }
+
+  .landing2 h2 {
+    font-size: 40px;
+  }
+
+  .landing2 .typewriter {
+    font-size: 40px;
+  }
+  .skills h1 {
+    font-size: 60px;
+  }
+}
