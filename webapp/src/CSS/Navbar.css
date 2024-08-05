@@ -1,11 +1,30 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .Navbar {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(5px);
+    background-color: var(--light-color);
+    color: black;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 .Navbar a {
@@ -17,14 +36,33 @@
 }
 
 .Navbar h1 {
+    color: black;
     font-size: 30px;
 }
 
 .Navbar .links {
-    margin-right: 40px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    margin-right: 20px;
 }
+
+.Navbar .HashLink {
+    margin: 0;
+}
+
 .Navbar .links a {
-    color: black;
+    transition: 0.4s;
     text-decoration: none;
     font-size: 25px;
+}
+
+.Navbar .links a:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--info-color);
 }

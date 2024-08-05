@@ -1,0 +1,21 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import exampleImage from '../Images/alltimehoops.png';
+
+const ExampleCarouselImage = ({ text }) => {
+  return (
+    <div>
+      <img
+        className="d-block w-100"
+        src={exampleImage}
+        alt={text}
+      />
+    </div>
+  );
+};
+
+ExampleCarouselImage.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+export default ExampleCarouselImage;
