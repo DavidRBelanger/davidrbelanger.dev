@@ -9,6 +9,8 @@
   --dark-color: #343a40;
   --white-color: #ffffff;
   --black-color: #000000;
+  --dark-blue: #374A67;
+  --darker-blue: #021E48;
 }
 
 @keyframes slideInFromLeft {
@@ -101,9 +103,10 @@ body {
 }
 
 .second-section {
-  background-color: var(--primary-color);
+  background: linear-gradient(var(--dark-blue), var(--darker-blue));
   margin: 0;
-  z-index: 11;
+  z-index: -1;
+  padding-bottom: 200px;
 }
 
 .App {
@@ -246,11 +249,11 @@ code {
   margin-top: 50px;
 }
 
-#about-title {
+.about h2 {
   color: white;
   font-size: 60px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 0px;
 }
 
 .about {
@@ -314,7 +317,53 @@ code {
 
 
 .projects-split svg {
-  color: var(--primary-color);
+
+  
+  color: transparent;
+}
+
+.Contact-Section {
+  background-color: var(--info-color);
+}
+.Contact-Split svg {
+  color: var(--light-color);
+  margin-top: 1px;
+}
+
+.contact-container {
+  width: 60vw;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-container hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+}
+
+.contact-container ul {
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content:center;
+}
+
+.contact-container li a{
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 

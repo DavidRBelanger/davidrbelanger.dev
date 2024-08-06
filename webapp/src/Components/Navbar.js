@@ -18,7 +18,9 @@ function Navbar() {
                 <HashLink className="HashLink" smooth to="/#about">
                     <a>About</a>
                 </HashLink>
+                <HashLink className="HashLink" smooth to="/#projects">
                 <a href="/#Projects">Projects</a>
+                </HashLink>
                 <a href="/#Contact">Contact</a>
             </div>
         </div>

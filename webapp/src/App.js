@@ -79,11 +79,10 @@ function App() {
         </div>
 
         <div className="about" id="about">
-
           <ScrollAnimation animateIn='fadeIn'>
-            <h2 id="about-title">About Me</h2>
+            <h2 >About Me</h2>
           </ScrollAnimation>
-          <div className="about-grid-container">
+          <div className="about-grid-container" >
             <div className="about-grid-first">
               <div className="about-text">
                 <ScrollAnimation animateIn='fadeInLeft' delay={100}>
@@ -108,11 +107,31 @@ function App() {
         </div>
 
       </div >
-        <div className="Projects-Section">
-          <div className="projects-split">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#000"><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" fill="currentColor"></path></svg>          </div>
-          <Projects/>
+      <div className="Projects-Section" >
+        <div className="projects-split" >
+          <svg xmlns="http://www.w3.org/2000/svg" id="projects" viewBox="0 0 1000 100" fill="#000"><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" fill="currentColor"></path></svg>          </div>
+        <div className="projects">
+          <Projects  />
         </div>
+      </div>
+      <div className="Contact-Section">
+        <div className="Contact-Split">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="currentColor"><path d="M0 0v100S500 4 1000 4V0H0Z"></path></svg>
+        </div>
+        <div className="contact-container">
+          <h2 id="contact-title">Contact Me</h2>
+          <hr />
+
+          <p>Have a question or want to work with me? Contact me on one of the following platforms.</p>
+          <p>I am always open to new professional opportunities as a software engineer.</p>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/davidrbelanger23/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+
     </>
   );
 }

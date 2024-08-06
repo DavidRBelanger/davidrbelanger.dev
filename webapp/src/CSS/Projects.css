@@ -8,7 +8,7 @@
 .projects h1 {
     font-size: 60px;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .projects hr {
@@ -25,15 +25,103 @@
 }
 
 .project {
+    transition: 0.4s;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    min-height: 250px;
+}
+
+.project:hover {
+    transition: 0.4s;
+    transform: scale(1.01);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -2px -2px 10px white;
 }
 
 .project a {
+    transition: 0.4s;
     color: var(--info-color);
+    font-size: 30px;
+}
+
+.project a:hover {
+    transition: 0.4s;
+    color: var(--primary-color);
+}
+
+.project .features-container {
+    margin: auto;
 }
 .project ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
+
+.project li {
+    margin: 5px;
+    font-size: 25px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 30px;
+}
+
+.project .buttons-container {
+    padding: 5px;
+    position: absolute;
+    bottom: 5%;
+}
+
+.project .buttons-container a {
+    transition: 0.4s;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.project .buttons-container a:hover {
+    transition: 0.4s;
+    background-color: var(--info-color);
+}
+
+
+.project .image-container img {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 667px) and (max-width: 1600px) {
+  .projects h1 {
+    font-size: 40px;
+  }
+  .project {
+    min-height: 200px;
+  }  
+  
+  .project a {
+        font-size: 20px;
+    }
+    .project p {
+      font-size: 20px;
+    }
+
+    .project li {
+      font-size: 20px;
+    }
+    .project .buttons-container a {
+      font-size: 20px;
+    }
+} 
